@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Forms com JavaScript</title>
+    <style>
+        label{
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        input[type=submit],label{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form name="curso1" id="curso1" action="#" method="post">
+        <label>Nome</label>
+        <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+        <label>Senha</label>
+        <input type="password" name="fSenha" value="123">
+        <input type="submit" name="btEnviar" value="Enviar">
+    </form>
+    <form name="curso2" id="curso2" action="#" method="post">
+        <label>Nome</label>
+        <input type="text" name="fNome" id="teste" value="Segundo - 2">
+        <label>Senha</label>
+        <input type="password" name="fSenha" value="123">
+        <input type="submit" name="btEnviar" value="Enviar">
+    </form>
+    <hr>
+
+    <script>
+        var fm=document.forms[1].id;       // vai retornar o id do índice [1]          
+            //document.forms.item(1).id;      três formas de fazer a mesma coisa
+            //document.forms.nameditem(1).id;
+        document.forms.length            // vai retornar a quantidade de formulários.
+        document.write(fm)
+        
+
+
+        // forms -> aponta para o formulário
+        // length retorna a quantidade de elementos
+
+    </script>
+
+
+    
+</body>
+</html>

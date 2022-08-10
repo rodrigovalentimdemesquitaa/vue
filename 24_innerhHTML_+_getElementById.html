@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML E mais sobre getElementById</title>
+</head>
+<body>
+
+    <p id="texto">CFB Cursos</p>
+    <input type="text" id="cxtexto" value="CFB Cursos">
+    
+    
+    <script>
+        var cxtexto=document.getElementById("cxtexto").value="Curso de JavaScript";
+
+        var texto=document.getElementById("texto").innerHTML;
+        alert(texto);
+
+    // innerHTML -> pega o texto que está dentro da tag html
+    </script>
+</body>
+</html>

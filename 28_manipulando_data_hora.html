@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Data e Hora</title>
+</head>
+<body>
+    <script>
+///////////////////////////////////GET -> RETORNA /////////////////////////////////////////////////////
+    document.write("<h3>GET -> RETORNA</h3>")
+
+        var dt=new Date();                  //novo objeto criado. data atual -> get
+
+        
+        var diasem=dt.getDay();             // retorna o dia da semana
+        var dia=dt.getDate();               // retorna o dia do mês
+        var mes=dt.getMonth();              // retorna o mês
+        var ano=dt.getFullYear();           // retorna o ano
+
+        var horas=dt.getHours();            // retorna a hora
+        var minutos=dt.getMinutes();        // retorna o minutos
+        var segundos=dt.getSeconds();       // retorna os segundos
+
+        var meses=new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        var semanas=new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado");
+
+        document.write(Date() + "<hr>");            //mostra a data completa
+
+        document.write(semanas[diasem] + "," + " de " + meses[mes] + " de " + ano +  "<hr>");
+
+        document.write(horas + ":" + minutos + ":" + segundos + "<hr>" );
+
+/////////////////////////////////  SET -> MODIFICA //////////////////////////////////////////////////
+        document.write("<h3>SET -> MODIFICA</h3>")
+
+        var ndt=new Date();                 // novo obsjeto criado. data modificada -> set
+
+        ndt.setDate(dt.getDate()+10);        // modifiquei a data com setDate
+
+        var diasem=ndt.getDay();             
+        var dia=ndt.getDate();               
+        var mes=ndt.getMonth();              
+        var ano=ndt.getFullYear();           
+
+        var horas=ndt.getHours();            
+        var minutos=ndt.getMinutes();
+        var segundos=ndt.getSeconds();
+
+        var meses=new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        var semanas=new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado");
+
+        document.write(Date() + "<hr>");            //mostra a data completa
+
+        document.write(semanas[diasem] + "," + " de " + meses[mes] + " de " + ano +  "<hr>");
+
+        document.write(horas + ":" + minutos + ":" + segundos + "<hr>" );
+
+
+        // setDate -> modifica dias
+        // setMonth -> modifica meses
+        // setFullYear -> modifica anos
+        // e assim por diante
+    </script>
+</body>
+</html>
