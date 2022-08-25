@@ -1,4 +1,3 @@
-// concluída até a aula 11
+// Revisando/novaLinguagem/
+// concluída até a aula 18
 
-console.clear(); 
-console.log("Olá mundo!");
